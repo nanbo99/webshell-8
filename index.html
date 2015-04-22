@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Webshell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
     <style>
       body {
         background-color: #e7e8f9;
@@ -21,7 +22,7 @@
         display: inline-block;
         height: 10px;
         width: 10px;
-        margin: 5px 4px 0 0;
+        margin: 5px 0 0 0;
         background-color: #7c7c85;
         border-radius: 50%;
       }
@@ -39,6 +40,7 @@
         margin: 0;
       }
       .input {
+        height: 15px;
         width: 510px;
         padding: 0;
         background-color: transparent;
@@ -53,13 +55,13 @@
   <body>
     <div class="window">
       <div class="menubar">
-        <div class="button"></div><!--
-        --><div class="button"></div><!--
-        --><div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
       </div>
       <div class="terminal" id="terminal">
         <pre class="output" id="output"></pre>
-        $ <input class="input" id="input" autofocus />
+        $ <input class="input" id="input" autocapitalize="off" autofocus />
       </div>
     </div>
     <script src="webshell.js"></script>
