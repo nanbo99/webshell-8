@@ -18,7 +18,8 @@ var Shell = function() {
     },
     home: {
       nick: {
-        'about.txt': 'This shell was created with a bit of JavaScript\n',
+        'about.txt': 'This is a little shell I made in JavaScript. Feel ' +
+          'free to have a look around.\n',
       },
     },
     tmp: {},

@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Webshell</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="viewport" content="initial-scale=0.7, user-scalable=no">
     <style>
       body {
         background-color: #e7e8f9;
       }
       .window {
-        width: 550px;
+        max-width: 550px;
         margin: 60px auto 0;
+        padding: 0 16px;
       }
       .menubar {
         height: 20px;
@@ -29,7 +30,7 @@
       .terminal {
         height: 300px;
         padding: 10px;
-        overflow: scroll;
+        overflow-y: scroll;
         border-radius: 0 0 4px 4px;
         background-color: #2d2d35;
         color: #dddddd;
@@ -38,10 +39,11 @@
       }
       .output {
         margin: 0;
+        white-space: pre-wrap;
       }
       .input {
         height: 14px;
-        width: 510px;
+        width: 90%;
         padding: 0;
         background-color: transparent;
         border: none;
